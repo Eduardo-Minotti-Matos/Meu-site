@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="css-3.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="css-3.png"
+            alt="Logo"
+            class="logo-img"
+            width="20%"
+            height="10%"
+          />
+        </div>
+        <div class="nav-links">
+          <a href="inicio.html">Inicio</a>
+          <a href="estilos-em-cascata.html">Estilos em cascata</a>
+          <a href="formatacao-css.html">Formatação css</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar..." />
+          <button type="button">Buscar</button>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <ul>
+        <h2>
+          O box model no CSS é um conceito fundamental que descreve como os
+          elementos HTML são representados como caixas retangulares. Ele
+          consiste em quatro partes principais:
+        </h2>
+        <br>
+        <h1>1. Content (Conteúdo)</h1>
+        <li>
+          É a área onde o texto, imagens ou outros conteúdos são exibidos. O
+          tamanho dessa área pode ser definido com as propriedades width e
+          height.
+        </li>
+        <br>
+        <h1>2. Padding (Preenchimento)</h1>
+        <li>
+          O preenchimento é o espaço entre o conteúdo e a borda do elemento. Ele
+          cria um espaço interno e pode ser ajustado usando a propriedade
+          padding, que pode ser configurada para todos os lados ao mesmo tempo
+          ou individualmente (ex: padding: 20px;).
+        </li>
+        <br>
+        <h1>3. Border (Borda)</h1>
+        <li>
+          A borda envolve o preenchimento e o conteúdo. Você pode definir a
+          espessura, o estilo (sólida, pontilhada, etc.) e a cor da borda usando
+          a propriedade border. Assim como o preenchimento, a borda pode ser
+          ajustada para todos os lados ou para lados específicos.
+        </li>
+        <br>
+        <h1>4. Margin (Margem)</h1>
+        <li>
+          A margem é o espaço externo que separa o elemento de outros elementos
+          ao seu redor. É a área fora da borda e pode ser controlada com a
+          propriedade margin. Assim como o preenchimento e a borda, a margem
+          pode ser configurada de forma geral ou individualmente.
+        </li>
+        <br>
+        <h1>Importância do Box Model</h1>
+        <h2>Compreender o box model é essencial para:</h2>
+        <li>
+          <strong>Layout Preciso</strong>:Saber como o espaço é distribuído
+          entre conteúdo, borda, preenchimento e margem ajuda a criar layouts
+          mais controlados e previsíveis.
+        </li>
+        <li>
+          <strong>Responsividade</strong>: O box model é vital para projetar
+          sites que funcionam bem em diferentes dispositivos e tamanhos de tela.
+        </li>
+        <li>
+          <strong>Espaçamento</strong>: Ajustar corretamente margens e
+          preenchimentos é crucial para a estética e legibilidade de um site.
+        </li>
+        <section class="container2">
+          <h1><u><i>Exemplo Prático</i></u></h1>
+          <h2>
+            Aqui está um exemplo simples de como aplicar o box model em CSS:
+          </h2>
+          <h1>EXEMPLO 1: Box Model Básico</h1>
+          <center><div class="caixa"></div></center>
+          <h1>CÓDIGOS:</h1>
+          <center>
+            <strong>HTML</strong>
+            &lt;div class="caixa"&gt;&lt;/div&gt;
+          </center>
+          <center>
+            <strong>CSS</strong>
+            .caixa { width: 200px; height: 100px; padding: 20px; border: 5px
+            solid black; margin: 10px; background-color: lightblue; }
+          </center>
+          <h1>Explicação:</h1>
+          <li><strong>Content</strong>: 200px x 100px</li>
+          <li>
+            <strong>Padding</strong>: 20px em todos os lados (aumenta a largura
+            e altura total)
+          </li>
+          <li><strong>Border</strong>: 5px em todos os lados</li>
+          <li><strong>Margin</strong>: 10px em todos os lados</li>
+
+          <br /><br />
+          <h1>EXEMPLO 2: Box Model com box-sizing</h1>
+          <center><div class="caixa2"></div></center>
+          <h1>CÓDIGOS:</h1>
+          <center>
+            <strong>HTML</strong>
+            &lt;div class="caixa2"&gt;&lt;/div&gt;
+          </center>
+          <center>
+            <strong>CSS</strong>
+            .caixa2 { box-sizing: border-box; width: 200px; height: 100px;
+            padding: 20px; border: 5px solid black; margin: 10px;
+            background-color: lightgreen; }
+          </center>
+          <h1>Explicação:</h1>
+          <li>
+            Com box-sizing: border-box, a largura total do elemento será
+            exatamente 200px, incluindo o padding e a borda. Isso facilita o
+            controle de layout.
+          </li>
+          <br /><br />
+          <h1>EXEMPLO 3: Variações no Box Model</h1>
+          <center><div class="caixa3"></div></center>
+          <h1>CÓDIGOS:</h1>
+          <center>
+            <strong>HTML</strong>
+            &lt;div class="caixa3"&gt;&lt;/div&gt;
+          </center>
+          <center>
+            <strong>CSS</strong>
+            .caixa3 { width: 150px; height: 150px; padding: 10px 20px; border:
+            3px solid red; margin: 15px; background-color: lightcoral; }
+          </center>
+          <h1>Explicação:</h1>
+          <li><strong>Content</strong>: 150px x 150px</li>
+          <li>
+            <strong>Padding</strong>: 10px (topo e fundo) e 20px (esquerda e
+            direita)
+          </li>
+          <li><strong>Border</strong>: 3px</li>
+          <li><strong>Margin</strong>: 15px</li>
+        </section>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; Funções CSS 2024</p>
+    </footer>
+  </body>
+</html>

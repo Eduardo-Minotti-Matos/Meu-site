@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="css-3.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="css-3.png"
+            alt="Logo"
+            class="logo-img"
+            width="20%"
+            height="10%"
+          />
+        </div>
+        <div class="nav-links">
+          <a href="inicio.html">Inicio</a>
+          <a href="formatacao-css.html">Formatação css</a>
+          <a href="box-model.html">Box model</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar..." />
+          <button type="button">Buscar</button>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <ul>
+        <h2>
+          O estilo em cascata no CSS permite a estilização eficiente de
+          páginas web. <br>O conceito de "cascata" refere-se à forma como as regras
+          de estilo se acumulam e se sobrepõem.
+        </h2>
+        <br>
+
+        <h1><U>SELETORES</U></h1>
+        <h2>Identificam quais elementos HTML serão estilizados:</h2>
+        <li>
+          <strong>Elementos</strong>: Seleciona elementos pelo nome da tag (ex:
+          p).
+        </li>
+        <li>
+          <strong>Classe</strong>: Aplica estilos a elementos com uma classe
+          específica (ex: .minha-classe).
+        </li>
+        <li>
+          <strong>ID</strong>: Estiliza um único elemento com um ID (ex:
+          #meu-id).
+        </li>
+        <br />
+        <h1><u>PRINCÍPIOS BÁSICOS</u></h1>
+        <li>
+          1.<strong>Especificidade</strong>: As regras de estilo podem ter
+          diferentes níveis de prioridade, dependendo da forma como são
+          definidas. Regras aplicadas a IDs têm mais peso que aquelas aplicadas
+          a classes, por exemplo. Isso significa que, ao aplicar estilos a um
+          elemento, o CSS considera a especificidade para determinar qual estilo
+          deve ser aplicado.
+        </li>
+
+        <li>
+          2.<strong>Herança</strong>: Muitas propriedades CSS são herdadas de
+          elementos pai para seus filhos. Por exemplo, se você definir uma cor
+          de fonte para um elemento pai, todos os elementos filhos herdarão essa
+          cor, a menos que especificado de outra forma. Isso facilita a
+          manutenção de um estilo consistente em toda a página.
+        </li>
+
+        <li>
+          3.<strong>Cascata</strong>: Quando várias regras se aplicam a um mesmo
+          elemento, a ordem em que são declaradas no código influencia qual
+          regra será aplicada. Normalmente, a última regra na sequência tem
+          prioridade, a menos que uma regra mais específica intervenha.
+        </li>
+        <br>
+
+        <h1><U>APLICAÇÕES PRÁTICAS</U></h1>
+        <li>
+          Compreender esses princípios é essencial para desenvolver layouts
+          responsivos e visualmente atraentes. Ao usar a especificidade de forma
+          inteligente, você pode garantir que os estilos desejados sejam
+          aplicados corretamente. A herança permite uma configuração inicial
+          mais simples, reduzindo a necessidade de repetir estilos para cada
+          elemento. A cascata, por sua vez, dá flexibilidade ao desenvolvedor
+          para ajustar estilos conforme necessário, sem complicações.
+        </li>
+        <br>
+        <h1><U>CONCLUSÃO</U></h1>
+        <li>
+          O estilo em cascata no CSS é uma ferramenta poderosa que oferece
+          controle e organização na estilização de páginas web. Ao dominar
+          conceitos como especificidade, herança e a própria cascata, os
+          desenvolvedores podem criar designs eficazes e consistentes,
+          melhorando a experiência do usuário e facilitando a manutenção do
+          código. Essa compreensão é vital para qualquer profissional que deseje
+          se destacar no desenvolvimento front-end.
+        </li>
+      </ul>
+      <section class="container4">
+        <center><img src="cascata.jpg" alt="css img" class="imginicio" /></center>
+      </section>
+      <h1><U>RESULTADO DO CÓDIGO EM CASCATA ACIMA:</U></h1>
+      <div class="container">
+        <h1 style="color:#F00">Olá mundo</h1>
+      </div>
+    </section>
+   
+    <footer>
+      <p>&copy; Funções CSS 2024</p>
+    </footer>
+  </body>
+</html>
